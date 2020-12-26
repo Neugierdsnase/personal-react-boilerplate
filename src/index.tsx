@@ -2,9 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { App } from './App'
 import reportWebVitals from './reportWebVitals'
+import { GlobalStyle } from './theme/globalStyles'
+import { NormalizedStyle } from './theme/normalize'
 
 ReactDOM.render(
   <React.StrictMode>
+    <NormalizedStyle />
+    <GlobalStyle />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
